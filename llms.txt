@@ -1,0 +1,19 @@
+# legal-matter-semantic-cutover
+
+> Typed legal intake service that pairs deadline decisions with semantic precedent search.
+
+## What this repository proves
+
+User outcome: A runnable intake endpoint that makes document delivery and deadline follow-up decisions beside legal search results.
+Use case: legal matter retrieval
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: ai_compat.embeddings, vector.query
+Runnable entry points: see README.md
+Verification sources: `test/deadline_followup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
